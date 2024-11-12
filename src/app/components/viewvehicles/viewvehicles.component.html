@@ -1,0 +1,23 @@
+<p>viewvehicle works!</p>
+<div class="row"*ngIf="vehicle">
+    <div class="col-mg-3">
+        <img [src]="vehicle.vehicleImage" alt="" class="img-fluid">
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>{{vehicle.vehicleCompany}} {{vehicle.vehicleName}}</h4>
+                    <p>{{vehicle.vehicleDescription}}</p>
+                    <p>Available at {{vehicle.availableTime}}</p>
+                    <p><span class="badge bg-primary">{{vehicle.rating}}<i class="fa fa-stars"></i></span></p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Price: {{vehicle.vehiclePrice}}</h4>
+                    <button class="btn btn-primary">Book Now <i class="fa fa-check"></i></button>
+                    <button class="btn btn-warning">Wishlist <i class="fa fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>

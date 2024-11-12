@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-4" *ngFor="let b of bikes">
+        <a routerLink="#" (click)="openVehicle(b.vehicleId)">
+        <div class="card">
+            <div class="card-header">
+                <img [src]="b.vehicleImage" alt="" class="img-fluid">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">{{b.vehicleName}}</h4>
+                <p><span class="badge bg-primary">{{b.rating}}<i class="fa fa-stars"></i></span></p>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+<router-outlet></router-outlet>
